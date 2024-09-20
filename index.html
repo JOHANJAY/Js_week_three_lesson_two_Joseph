@@ -4,57 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Random dogs generator</title>
   </head>
   <body>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
-
-      h1,
-      p,
-      button {
-        font-family: "Protest Guerrilla", sans-serif;
-      }
-      @media screen and (max-width: 640px) {
-        ::-webkit-scrollbar {
-        display: none;
-      }
-      }
-    </style>
-    <header class="w-full h-[5vh] py-2 bg-black flex justify-center items-center">
+    <header
+      class="w-full h-[5vh] py-2 bg-black flex justify-center items-center"
+    >
       <h1 class="text-xl text-center text-white">Random Dog's Generator</h1>
     </header>
     <main>
-      <p class="pt-2 text-center">Click the button to see mans's best friend</p>
+      <p class="pt-1 text-center">Click the button to see mans's best friend</p>
       <div
-        class="container w-fit h-[75vh] mx-auto my-3 p-3 overflow-y-scroll flex flex-col items-center gap-3 md:grid md:grid-cols-3 lg:h-[70vh] lg:my-2"
+        class="container w-fit h-[75vh] mx-auto my-2 overflow-y-scroll flex flex-col items-center gap-3 md:grid md:grid-cols-3 lg:h-[70vh] lg:my-2"
       >
-        <img
-          class="w-80 h-72"
-          src=""
-          alt="This is a random dog"
-        />
         <img class="w-80 h-72" src="" alt="This is a random dog" />
-        <img
-          class="w-80 h-72"
-          src=""
-          alt="This is a random dog"
-        />
-        <img
-          class="w-80 h-72"
-          src=""
-          alt="This is a random dog"
-        />
-        <img
-          class="w-80 h-72"
-          src=""
-          alt="This is a random dog"
-        />
-        <img
-          class="w-80 h-72"
-          src=""
-          alt="This is a random dog"
-        />
+        <img class="w-80 h-72" src="" alt="This is a random dog" />
+        <img class="w-80 h-72" src="" alt="This is a random dog" />
+        <img class="w-80 h-72" src="" alt="This is a random dog" />
+        <img class="w-80 h-72" src="" alt="This is a random dog" />
+        <img class="w-80 h-72" src="" alt="This is a random dog" />
         <img
           class="w-80 h-72 hidden md:block"
           src=""
@@ -71,7 +40,7 @@
           alt="This is a random dog"
         />
       </div>
-      <div class="flex justify-center">
+      <div class="flex justify-center items-center">
         <button
           class="px-2.5 mt-3 border border-black rounded-lg text-white bg-black lg:mt-1"
           onclick="generateDogs()"
@@ -80,7 +49,9 @@
         </button>
       </div>
     </main>
-    <footer class="w-full h-[5vh] mt-2 p-2 bg-black fixed bottom-0 right-0 left-0 flex justify-center items-center">
+    <footer
+      class="w-full h-[5vh] mt-2 p-2 bg-black fixed bottom-0 right-0 left-0 flex justify-center items-center"
+    >
       <p class="text-xl text-center text-white">&copy;Johan.co</p>
     </footer>
     <script src="index.js"></script>
