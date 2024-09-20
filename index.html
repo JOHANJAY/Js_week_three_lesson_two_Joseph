@@ -15,17 +15,19 @@
       button {
         font-family: "Protest Guerrilla", sans-serif;
       }
-      ::-webkit-scrollbar {
+      @media screen and (max-width: 640px) {
+        ::-webkit-scrollbar {
         display: none;
       }
+      }
     </style>
-    <header class="w-full py-2 bg-black">
+    <header class="w-full h-[5vh] py-2 bg-black flex justify-center items-center">
       <h1 class="text-xl text-center text-white">Random Dog's Generator</h1>
     </header>
     <main>
       <p class="pt-2 text-center">Click the button to see mans's best friend</p>
       <div
-        class="container w-fit h-[80vh] mx-auto my-3 p-3 overflow-y-scroll flex flex-col items-center gap-3 md:grid md:grid-cols-3 lg:h-[70vh] lg:my-2"
+        class="container w-fit h-[75vh] mx-auto my-3 p-3 overflow-y-scroll flex flex-col items-center gap-3 md:grid md:grid-cols-3 lg:h-[70vh] lg:my-2"
       >
         <img
           class="w-80 h-72"
@@ -78,7 +80,7 @@
         </button>
       </div>
     </main>
-    <footer class="mt-2 p-2 bg-black md:fixed md:bottom-0 md:right-0 md:left-0">
+    <footer class="w-full h-[5vh] mt-2 p-2 bg-black fixed bottom-0 right-0 left-0 flex justify-center items-center">
       <p class="text-xl text-center text-white">&copy;Johan.co</p>
     </footer>
     <script src="index.js"></script>
