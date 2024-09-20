@@ -1,74 +1,73 @@
-//so i made this fetch call for a random dog image generator for 9 images and as you can see it is very long 
+//so i made this fetch call for a random dog image generator for 9 images and as you can see it is very long
 const dog = document.getElementsByTagName("img");
-const generate = document.querySelector("button")
+const generate = document.querySelector("button");
 
 async function generateDogs() {
   fetch("https://dog.ceo/api/breeds/image/random")
     .then((Response) => Response.json())
     .then((data) => {
       console.log(data);
-      dog[0].src = data.message
+      dog[0].src = data.message;
     });
 
   fetch("https://dog.ceo/api/breeds/image/random")
     .then((Response) => Response.json())
     .then((data) => {
       console.log(data);
-      dog[1].src = data.message
+      dog[1].src = data.message;
     });
 
   fetch("https://dog.ceo/api/breeds/image/random")
     .then((Response) => Response.json())
     .then((data) => {
       console.log(data);
-      dog[2].src = data.message
+      dog[2].src = data.message;
     });
 
   fetch("https://dog.ceo/api/breeds/image/random")
     .then((Response) => Response.json())
     .then((data) => {
       console.log(data);
-      dog[3].src = data.message
+      dog[3].src = data.message;
     });
 
   fetch("https://dog.ceo/api/breeds/image/random")
     .then((Response) => Response.json())
     .then((data) => {
       console.log(data);
-      dog[4].src = data.message
+      dog[4].src = data.message;
     });
 
   fetch("https://dog.ceo/api/breeds/image/random")
     .then((Response) => Response.json())
     .then((data) => {
       console.log(data);
-      dog[5].src = data.message
+      dog[5].src = data.message;
     });
 
   fetch("https://dog.ceo/api/breeds/image/random")
     .then((Response) => Response.json())
     .then((data) => {
       console.log(data);
-      dog[6].src = data.message
+      dog[6].src = data.message;
     });
 
   fetch("https://dog.ceo/api/breeds/image/random")
     .then((Response) => Response.json())
     .then((data) => {
       console.log(data);
-      dog[7].src = data.message
+      dog[7].src = data.message;
     });
 
   fetch("https://dog.ceo/api/breeds/image/random")
     .then((Response) => Response.json())
     .then((data) => {
       console.log(data);
-      dog[8].src = data.message
+      dog[8].src = data.message;
     });
 }
 
 generateDogs();
-
 
 //this is a more optimized way i got from chatgpt
 /* const dogImages = document.getElementsByTagName("img");
@@ -86,4 +85,3 @@ async function generateDogs() {
 }
 
 generateDogs() */
-

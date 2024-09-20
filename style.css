@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap");
 
 h1,
-p,
-button {
+p{
   font-family: "Protest Guerrilla", sans-serif;
 }
+
+button{
+    font-family: "Protest Guerrilla", sans-serif;
+}
+
 ::-webkit-scrollbar {
   width: 20px;
 }
