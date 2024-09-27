@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+  </head>
+  <body class="flex flex-col justify-center items-center bg-gray-400" id="body">
+    <form
+      action={getApi}
+      class="mt-5 p-3 border-2 border-black rounded"
+    >
+      <label for="username" class="font-bold"> Username: </label><br />
+      <input
+        type="text"
+        id="username"
+        class="mb-2 px-2 py-1 rounded border-0 focus:outline-none"
+      /><br />
+      <label for="email" class="font-bold">Email:</label><br />
+      <input
+        type="text"
+        id="email"
+        class="mb-2 px-2 py-1 rounded border-0 focus:outline-none"
+      /><br />
+      <label for="password" class="font-bold">Password:</label><br />
+      <input
+        type="password"
+        id="password"
+        class="mb-2 px-2 py-1 rounded border-0 focus:outline-none"
+      /><br />
+      <div class="flex justify-center">
+        <input
+          type="button"
+          value="Submit"
+          class="px-3 py-1 text-white bg-gray-800 rounded cursor-pointern active:bg-gray-400"
+          id="submit"
+        />
+      </div>
+    </form>
+    <p class="mt-10 font-bold " id="para"></p>
+    <script src="task2.js"></script>
+  </body>
+</html>
